@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_events_event_agenda",
+  "info": {
+    "displayName": "event_agenda"
+  },
+  "options": {},
+  "attributes": {
+    "text_link": {
+      "type": "string"
+    },
+    "agenda": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.link"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expositors",
+  "info": {
+    "singularName": "expositor",
+    "pluralName": "expositors",
+    "displayName": "expositor"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "job_title": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event",
+      "mappedBy": "expositor"
+    }
+  }
+}
