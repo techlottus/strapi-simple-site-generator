@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -36,25 +37,28 @@
       "type": "string"
     },
     "desktop_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tablet_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "mobile_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "short_description": {
       "type": "string"
@@ -113,13 +117,6 @@
     "is_private": {
       "type": "boolean"
     },
-    "recording": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": true
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
@@ -135,6 +132,23 @@
       "type": "component",
       "repeatable": false,
       "component": "events.event-agenda"
+    },
+    "contact_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.link"
+    },
+    "register_start_datetime": {
+      "type": "datetime"
+    },
+    "register_end_datetime": {
+      "type": "datetime"
+    },
+    "video": {
+      "displayName": "youtube_video",
+      "type": "component",
+      "repeatable": false,
+      "component": "events.youtube-video"
     }
   }
 }
