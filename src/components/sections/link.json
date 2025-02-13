@@ -33,6 +33,10 @@
     },
     "disabled": {
       "type": "boolean"
+    },
+    "download": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

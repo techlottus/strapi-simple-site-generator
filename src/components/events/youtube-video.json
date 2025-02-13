@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_events_youtube_videos",
+  "info": {
+    "displayName": "youtube_video"
+  },
+  "options": {},
+  "attributes": {
+    "youtube_id": {
+      "type": "string"
+    }
+  }
+}
