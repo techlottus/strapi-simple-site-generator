@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "predevelop": "yarn add ./src/plugins/strapi-plugin-react-editorjs ",
+    "predevelop": "yarn add ./src/plugins/strapi-editorjs ",
     "develop": "strapi develop",
-    "prestart:pm2": "yarn global add pm2 && yarn add ./src/plugins/strapi-plugin-react-editorjs",
+    "prestart:pm2": "yarn global add pm2 && yarn add ./src/plugins/strapi-editorjs",
     "start:pm2": "pm2-runtime start ecosystem.config.js",
     "start": "strapi start",
-    "prebuild": "yarn add ./src/plugins/strapi-plugin-react-editorjs ",
+    "prebuild": "yarn add ./src/plugins/strapi-editorjs ",
     "build": "rm -rf .cache && strapi build",
     "strapi": "strapi"
   },
@@ -27,6 +27,7 @@
     "mysql": "^2.18.1",
     "pg": "^8.8.0",
     "pm2": "^5.2.2",
+    "strapi-plugin-react-editorjs": "./src/plugins/strapi-editorjs",
     "strapi-plugin-redirects": "^0.0.6"
   },
   "author": {
