@@ -9761,7 +9761,7 @@ std-env@^3.0.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.3.3.tgz#a54f06eb245fdcfef53d56f3c0251f1d5c3d01fe"
   integrity sha512-Rz6yejtVyWnVjC1RFvNmYL10kgjC49EOghxWn0RFqlCHGFpQx+Xe7yW3I4ceK1SGrWIGMjD5Kbue8W/udkbMJg==
 
-strapi-plugin-react-editorjs@./src/plugins/strapi-plugin-react-editorjs:
+strapi-plugin-react-editorjs@./src/plugins/strapi-editorjs:
   version "0.0.0-development"
   dependencies:
     "@editorjs/checklist" "1.3.0"
