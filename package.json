@@ -5,6 +5,8 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "prestart:pm2": "yarn global add pm2",
+    "start:pm2": "pm2-runtime start ecosystem.config.js",
     "start": "strapi start",
     "build": "rm -rf .cache && strapi build",
     "strapi": "strapi"
