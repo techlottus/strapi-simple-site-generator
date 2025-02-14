@@ -19,14 +19,25 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  "vercel-deploy": {
+  "multi-site-vercel-deploy": {
     enabled: true,
     config: {
-      deployHook: env('VERCEL_DEPLOY_HOOK'),
-      apiToken: env('VERCEL_DEPLOY_API_TOKEN'),
-      appFilter: env('VERCEL_DEPLOY_APP_FILTER'),
-      teamFilter: env('VERCEL_DEPLOY_TEAM_FILTER'),
-      roles: [],
-    }
+      sites: [
+        {
+          deployHook: env('PORTALVERSE_VERCEL_DEPLOY_HOOK'),
+          apiToken: env('PORTALVERSE_VERCEL_DEPLOY_API_TOKEN'),
+          appFilter: env('PORTALVERSE_VERCEL_DEPLOY_APP_FILTER'),
+          teamFilter: env('PORTALVERSE_VERCEL_DEPLOY_TEAM_FILTER'),
+          displayName: "Portalverse",
+        },
+        {
+          deployHook: env('EVENTS_VERCEL_DEPLOY_HOOK'),
+          apiToken: env('EVENTS_VERCEL_DEPLOY_API_TOKEN'),
+          appFilter: env('EVENTS_VERCEL_DEPLOY_APP_FILTER'),
+          teamFilter: env('EVENTS_VERCEL_DEPLOY_TEAM_FILTER'),
+          displayName: "Eventos",
+        },
+      ],
+    },
   },
 });
