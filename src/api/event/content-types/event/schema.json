@@ -152,6 +152,9 @@
     },
     "metadata": {
       "type": "json"
+    },
+    "attendant_list_id": {
+      "type": "integer"
     }
   }
 }
