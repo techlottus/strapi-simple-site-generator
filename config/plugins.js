@@ -21,7 +21,7 @@ module.exports = ({ env }) => ({
   },
   'editorjs': {
     enabled: true,
-    resolve: './src/plugins/strapi-plugin-react-editorjs'
+    resolve: './src/plugins/strapi-editorjs'
   },
   "multi-site-vercel-deploy": {
     enabled: true,
