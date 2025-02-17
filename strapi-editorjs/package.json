@@ -44,31 +44,8 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "author": {
-    "name": "Matvey Melishev",
-    "email": "matvey@melishev.ru",
-    "url": "https://melishev.ru"
-  },
-  "maintainers": [
-    {
-      "name": "Matvey Melishev",
-      "email": "matvey@melishev.ru",
-      "url": "https://melishev.ru"
-    },
-    {
-      "name": "Jason Skipper",
-      "url": "https://www.skipperinnovations.com"
-    }
-  ],
   "engines": {
-    "node": "=18.17.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/melishev/strapi-plugin-editor-js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/melishev/strapi-plugin-editor-js/issues"
+    "node": "=18.x.x"
   },
   "keywords": [
     "strapi",

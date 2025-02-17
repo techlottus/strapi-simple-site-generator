@@ -20,7 +20,7 @@ module.exports = ({ env }) => ({
     },
   },
   'editorjs': {
-    enabled: true,
+    enabled: false,
     resolve: './src/plugins/strapi-editorjs'
   },
   "multi-site-vercel-deploy": {
