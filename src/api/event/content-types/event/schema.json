@@ -76,9 +76,9 @@
     },
     "category": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::event-category.event-category",
-      "inversedBy": "event"
+      "inversedBy": "events"
     },
     "modality": {
       "type": "enumeration",
