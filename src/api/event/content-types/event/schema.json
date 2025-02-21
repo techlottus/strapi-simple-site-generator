@@ -21,20 +21,11 @@
     "end_datetime": {
       "type": "datetime"
     },
-    "location": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::event-location.event-location",
-      "inversedBy": "event"
-    },
     "expositor": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::expositor.expositor",
       "inversedBy": "event"
-    },
-    "text_location": {
-      "type": "string"
     },
     "desktop_image": {
       "type": "media",
@@ -155,6 +146,12 @@
     },
     "attendant_list_id": {
       "type": "integer"
+    },
+    "location": {
+      "displayName": "event_location",
+      "type": "component",
+      "repeatable": false,
+      "component": "events.event-location"
     }
   }
 }
