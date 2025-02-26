@@ -15,12 +15,6 @@
     "name": {
       "type": "string"
     },
-    "start_datetime": {
-      "type": "datetime"
-    },
-    "end_datetime": {
-      "type": "datetime"
-    },
     "expositor": {
       "type": "relation",
       "relation": "oneToOne",
@@ -129,12 +123,6 @@
       "repeatable": false,
       "component": "sections.link"
     },
-    "register_start_datetime": {
-      "type": "datetime"
-    },
-    "register_end_datetime": {
-      "type": "datetime"
-    },
     "video": {
       "displayName": "youtube_video",
       "type": "component",
@@ -152,6 +140,42 @@
       "type": "component",
       "repeatable": false,
       "component": "events.event-location"
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "start_time": {
+      "type": "time",
+      "required": true,
+      "default": "16:30"
+    },
+    "end_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_time": {
+      "type": "time",
+      "required": true,
+      "default": "19:00"
+    },
+    "start_register_date": {
+      "type": "date",
+      "required": true
+    },
+    "start_register_time": {
+      "type": "time",
+      "required": true,
+      "default": "08:00"
+    },
+    "end_register_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_register_time": {
+      "type": "time",
+      "required": true,
+      "default": "18:00"
     }
   }
 }
