@@ -27,11 +27,11 @@
       "type": "media",
       "multiple": false
     },
-    "event": {
+    "events": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::event.event",
-      "mappedBy": "expositor"
+      "mappedBy": "expositors"
     }
   }
 }

@@ -15,11 +15,11 @@
     "name": {
       "type": "string"
     },
-    "expositor": {
+    "expositors": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::expositor.expositor",
-      "inversedBy": "event"
+      "inversedBy": "events"
     },
     "desktop_image": {
       "type": "media",
