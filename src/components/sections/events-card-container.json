@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_events_card_containers",
+  "info": {
+    "displayName": "events card container",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "max_entries": {
+      "type": "integer",
+      "default": 5,
+      "required": true
+    }
+  }
+}
