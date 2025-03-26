@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "confrence_link": {
+    "conference_link": {
       "type": "string"
     },
     "max_seats": {
