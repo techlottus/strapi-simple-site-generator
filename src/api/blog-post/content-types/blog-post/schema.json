@@ -22,7 +22,7 @@
       "target": "api::category.category",
       "inversedBy": "blog_posts"
     },
-    "body_editor": {
+    "body": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -92,7 +92,7 @@
       "relation": "oneToMany",
       "target": "api::blog-post.blog-post"
     },
-    "body": {
+    "body_json": {
       "pluginOptions": {
         "i18n": {
           "localized": true
