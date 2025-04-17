@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_modals",
+  "info": {
+    "displayName": "Modal"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

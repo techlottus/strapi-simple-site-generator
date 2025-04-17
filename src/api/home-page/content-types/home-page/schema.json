@@ -40,7 +40,8 @@
         "sections.text-image",
         "sections.image-card-list",
         "sections.promo-link-list",
-        "sections.text-content"
+        "sections.text-content",
+        "sections.events-card-container"
       ]
     },
     "seo": {

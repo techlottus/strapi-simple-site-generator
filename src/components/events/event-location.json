@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_events_event_locations",
+  "info": {
+    "displayName": "event_location",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "conference_link": {
+      "type": "string"
+    },
+    "max_seats": {
+      "type": "integer"
+    },
+    "considerations": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "name": {
+      "type": "string"
+    },
+    "inner_location": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "text_location": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
+    }
+  }
+}

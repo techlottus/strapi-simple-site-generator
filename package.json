@@ -5,12 +5,15 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
+    "prestart:pm2": "yarn global add pm2",
+    "start:pm2": "pm2-runtime start ecosystem.config.js",
     "start": "strapi start",
     "build": "rm -rf .cache && strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
+    "@code-mancers/strapi-plugin-multi-site-vercel-deploy": "^2.0.11",
     "@strapi/plugin-color-picker": "^4.12.1",
     "@strapi/plugin-graphql": "^4.12.1",
     "@strapi/plugin-i18n": "^4.12.1",
@@ -22,9 +25,8 @@
     "mysql": "^2.18.1",
     "pg": "^8.8.0",
     "pm2": "^5.2.2",
-    "strapi-plugin-react-editorjs": "^2.0.2",
-    "strapi-plugin-redirects": "^0.0.6",
-    "strapi-plugin-vercel-deploy": "^1.4.0"
+    "strapi-plugin-react-editorjs": "./src/plugins/strapi-editorjs",
+    "strapi-plugin-redirects": "^0.0.6"
   },
   "author": {
     "name": "A Strapi developer"
@@ -33,7 +35,7 @@
     "uuid": "686f8fb0-8c65-4cae-95fd-d1c157d575e1"
   },
   "engines": {
-    "node": ">=16.x.x <=18.x.x"
+    "node": "18.x.x"
   },
   "license": "MIT"
 }
