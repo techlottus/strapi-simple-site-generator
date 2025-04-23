@@ -13,12 +13,6 @@
     "max_seats": {
       "type": "integer"
     },
-    "considerations": {
-      "type": "richtext"
-    },
-    "description": {
-      "type": "richtext"
-    },
     "name": {
       "type": "string"
     },
@@ -33,6 +27,12 @@
     },
     "longitude": {
       "type": "string"
+    },
+    "considerations": {
+      "type": "json"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }
