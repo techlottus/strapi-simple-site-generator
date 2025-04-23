@@ -16,7 +16,7 @@
       "component": "molecules.informative-icon"
     },
     "subtitle": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }
