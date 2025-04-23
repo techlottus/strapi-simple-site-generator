@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "abstract": {
-      "type": "richtext"
-    },
     "ctaText": {
       "type": "string"
     },
@@ -40,6 +37,9 @@
       "relation": "manyToMany",
       "target": "api::extpost-category.extpost-category",
       "inversedBy": "external_posts"
+    },
+    "abstract": {
+      "type": "json"
     }
   }
 }
