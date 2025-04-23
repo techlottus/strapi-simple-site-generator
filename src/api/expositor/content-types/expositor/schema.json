@@ -18,8 +18,8 @@
       "type": "string"
     },
     "bio": {
-      "type": "richtext"
-    },
+      "type": "json"
+    },    
     "image": {
       "allowedTypes": [
         "images"
