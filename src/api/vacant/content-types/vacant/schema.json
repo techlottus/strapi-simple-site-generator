@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "body": {
-      "type": "richtext"
-    },
     "title": {
       "type": "string"
     },
@@ -43,6 +40,9 @@
     "redirect": {
       "type": "uid",
       "targetField": "title"
+    },
+    "body": {
+      "type": "json"
     }
   }
 }
