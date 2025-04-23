@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "richtext"
-    },
     "cards": {
       "type": "component",
       "repeatable": true,
@@ -33,6 +30,9 @@
       "type": "component",
       "repeatable": false,
       "component": "molecules.button"
+    },
+    "subtitle": {
+      "type": "json"
     }
   }
 }

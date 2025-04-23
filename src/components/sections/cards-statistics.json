@@ -9,14 +9,8 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "titleCards": {
       "type": "string"
-    },
-    "descriptionCards": {
-      "type": "richtext"
     },
     "cards": {
       "type": "component",
@@ -34,13 +28,19 @@
     "titleStatistics": {
       "type": "string"
     },
-    "descriptionStatistics": {
-      "type": "richtext"
-    },
     "statistics": {
       "type": "component",
       "repeatable": true,
       "component": "sections.statistics-card"
+    },
+    "description": {
+      "type": "json"
+    },
+    "descriptionCards": {
+      "type": "json"
+    },
+    "descriptionStatistics": {
+      "type": "json"
     }
   }
 }

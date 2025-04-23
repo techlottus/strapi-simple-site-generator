@@ -23,7 +23,7 @@
       ]
     },
     "detail": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }

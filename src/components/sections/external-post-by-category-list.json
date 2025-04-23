@@ -15,7 +15,7 @@
       "target": "api::extpost-category.extpost-category"
     },
     "description": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }

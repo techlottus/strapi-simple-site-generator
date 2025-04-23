@@ -9,13 +9,13 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "rockstars": {
       "type": "component",
       "repeatable": true,
       "component": "sections.rockstar-info"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }
