@@ -10,12 +10,12 @@
     "IconName": {
       "type": "string"
     },
-    "RichText": {
-      "type": "richtext"
-    },
     "iconColor": {
       "type": "string",
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "RichText": {
+      "type": "json"
     }
   }
 }

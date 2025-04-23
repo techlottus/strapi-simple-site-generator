@@ -90,7 +90,7 @@
           "localized": true
         }
       },
-      "type": "richtext"
+      "type": "json"
     }
   }
 }

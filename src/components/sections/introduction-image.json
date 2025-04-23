@@ -9,14 +9,14 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "images": {
       "displayName": "mediaqueryImages",
       "type": "component",
       "repeatable": true,
       "component": "sections.mediaquery-images"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }

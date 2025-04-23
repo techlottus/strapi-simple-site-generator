@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "text": {
-      "type": "richtext"
-    },
     "links": {
       "type": "component",
       "repeatable": true,
@@ -19,6 +16,9 @@
     },
     "iconName": {
       "type": "string"
+    },
+    "text": {
+      "type": "json"
     }
   }
 }

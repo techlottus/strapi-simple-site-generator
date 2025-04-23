@@ -12,14 +12,13 @@
     "subtitle": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "accordionItems": {
       "type": "component",
       "repeatable": true,
       "component": "sections.accordion-item"
+    },
+    "description": {
+      "type": "json"
     }
-
   }
 }

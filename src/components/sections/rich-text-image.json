@@ -17,9 +17,6 @@
         "images"
       ]
     },
-    "text": {
-      "type": "richtext"
-    },
     "imagePosition": {
       "type": "enumeration",
       "enum": [
@@ -44,6 +41,9 @@
       "type": "component",
       "repeatable": true,
       "component": "molecules.button"
+    },
+    "text": {
+      "type": "json"
     }
   }
 }

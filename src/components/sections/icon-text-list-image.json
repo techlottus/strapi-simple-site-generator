@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "iconTextList": {
       "type": "component",
       "repeatable": true,
@@ -48,6 +45,9 @@
         "right"
       ],
       "default": "right"
+    },
+    "description": {
+      "type": "json"
     }
   }
 }

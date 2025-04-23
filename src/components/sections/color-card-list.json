@@ -15,10 +15,10 @@
       "component": "sections.color-card"
     },
     "description": {
-      "type": "richtext"
+      "type": "json"
     },
     "alternativeText": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }
