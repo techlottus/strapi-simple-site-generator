@@ -17,10 +17,6 @@
       "required": true,
       "unique": true
     },
-    "requirements": {
-      "type": "richtext",
-      "required": false
-    },
     "requirementsDesktopImage": {
       "type": "media",
       "multiple": false,
@@ -61,6 +57,9 @@
       "type": "component",
       "repeatable": true,
       "component": "atoms.level-text"
+    },
+    "requirements": {
+      "type": "json"
     }
   }
 }
