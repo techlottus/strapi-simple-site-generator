@@ -56,9 +56,6 @@
       "repeatable": false,
       "component": "sections.prices"
     },
-    "details": {
-      "type": "richtext"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -176,6 +173,9 @@
       "type": "time",
       "required": true,
       "default": "18:00"
+    },
+    "details": {
+      "type": "json"
     }
   }
 }
