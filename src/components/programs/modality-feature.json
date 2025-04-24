@@ -18,16 +18,16 @@
       "type": "text"
     },
     "admissionProfile": {
-      "type": "richtext"
+      "type": "json"
     },
     "graduateProfile": {
-      "type": "richtext"
+      "type": "json"
     },
     "laborField": {
-      "type": "richtext"
+      "type": "json"
     },
     "admissionRequirements": {
-      "type": "richtext"
+      "type": "json"
     },
     "programStatistics": {
       "type": "component",
@@ -40,7 +40,7 @@
       "component": "programs.curriculum-by-campus"
     },
     "curriculumDescription": {
-      "type": "richtext"
+      "type": "json"
     },
     "summaries": {
       "displayName": "Summary",
