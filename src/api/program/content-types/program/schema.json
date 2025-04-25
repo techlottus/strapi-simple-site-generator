@@ -181,9 +181,6 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "detail": {
-      "type": "json"
-    },
     "summary": {
       "type": "json"
     },
@@ -213,6 +210,9 @@
     },
     "admissionRequirements": {
       "type": "json"
+    },
+    "detail": {
+      "type": "richtext"
     }
   }
 }
