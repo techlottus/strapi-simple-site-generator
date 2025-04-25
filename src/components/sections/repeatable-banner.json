@@ -9,10 +9,7 @@
     "title": {
       "type": "string",
       "required": false
-    },
-    "description_editor": {
-      "type": "richtext"
-    },
+    },    
     "banners": {
       "type": "component",
       "repeatable": true,
