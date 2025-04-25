@@ -212,7 +212,7 @@
       "type": "json"
     },
     "detail": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }
