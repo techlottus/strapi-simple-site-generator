@@ -211,8 +211,11 @@
     "admissionRequirements": {
       "type": "json"
     },
-    "detail": {
+    "detail_json": {
       "type": "json"
+    },
+    "detail": {
+      "type": "richtext"
     }
   }
 }
