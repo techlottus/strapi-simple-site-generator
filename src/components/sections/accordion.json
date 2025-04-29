@@ -17,8 +17,11 @@
       "repeatable": true,
       "component": "sections.accordion-item"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

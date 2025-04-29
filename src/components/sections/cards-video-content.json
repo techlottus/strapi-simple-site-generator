@@ -31,8 +31,11 @@
       "repeatable": false,
       "component": "molecules.button"
     },
-    "subtitle": {
+    "subtitle_json": {
       "type": "json"
+    },
+    "subtitle": {
+      "type": "richtext"
     }
   }
 }

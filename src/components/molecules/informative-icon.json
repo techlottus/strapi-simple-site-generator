@@ -12,8 +12,11 @@
     "iconName": {
       "type": "string"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

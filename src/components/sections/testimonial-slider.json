@@ -38,8 +38,11 @@
       "repeatable": true,
       "component": "sections.testimonial-card"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

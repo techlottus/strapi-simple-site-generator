@@ -58,8 +58,11 @@
       "repeatable": true,
       "component": "atoms.level-text"
     },
-    "requirements": {
+    "requirements_json": {
       "type": "json"
+    },
+    "requirements": {
+      "type": "richtext"
     }
   }
 }

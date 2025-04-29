@@ -4,7 +4,8 @@
   "info": {
     "singularName": "expositor",
     "pluralName": "expositors",
-    "displayName": "expositor"
+    "displayName": "expositor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,21 +18,25 @@
     "job_title": {
       "type": "string"
     },
-    "bio": {
+    "bio_json": {
       "type": "json"
-    },    
+    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "events": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "expositors"
+    },
+    "bio": {
+      "type": "richtext"
     }
   }
 }

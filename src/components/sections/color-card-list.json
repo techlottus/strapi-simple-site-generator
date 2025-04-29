@@ -14,11 +14,17 @@
       "repeatable": true,
       "component": "sections.color-card"
     },
-    "description": {
+    "description_json": {
       "type": "json"
     },
-    "alternativeText": {
+    "alternativeText_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "alternativeText": {
+      "type": "richtext"
     }
   }
 }

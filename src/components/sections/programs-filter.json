@@ -19,8 +19,11 @@
       "relation": "oneToMany",
       "target": "api::modality.modality"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -17,8 +17,11 @@
       "repeatable": true,
       "component": "sections.rvoe-list"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -50,8 +50,11 @@
       ],
       "default": "dark"
     },
-    "content": {
+    "content_json": {
       "type": "json"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

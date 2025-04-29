@@ -35,8 +35,11 @@
     "website": {
       "type": "string"
     },
-    "about": {
+    "about_json": {
       "type": "json"
+    },
+    "about": {
+      "type": "richtext"
     }
   }
 }

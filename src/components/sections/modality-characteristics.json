@@ -15,8 +15,11 @@
       "repeatable": true,
       "component": "molecules.informative-icon"
     },
-    "subtitle": {
+    "subtitle_json": {
       "type": "json"
+    },
+    "subtitle": {
+      "type": "richtext"
     }
   }
 }

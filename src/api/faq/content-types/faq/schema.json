@@ -23,8 +23,11 @@
       "target": "api::faq-category.faq-category",
       "inversedBy": "faqs"
     },
-    "answer": {
+    "answer_json": {
       "type": "json"
+    },
+    "answer": {
+      "type": "richtext"
     }
   }
 }

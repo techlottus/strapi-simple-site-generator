@@ -14,8 +14,11 @@
       "repeatable": true,
       "component": "sections.hero"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

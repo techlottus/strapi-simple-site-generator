@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "collectionName": "knowledge_areas",
   "info": {
     "singularName": "knowledge-area",
@@ -22,6 +23,5 @@
       "target": "api::program.program",
       "mappedBy": "knowledgeAreas"
     }
-  },
-  "kind": "collectionType"
+  }
 }
