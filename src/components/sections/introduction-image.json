@@ -15,8 +15,11 @@
       "repeatable": true,
       "component": "sections.mediaquery-images"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

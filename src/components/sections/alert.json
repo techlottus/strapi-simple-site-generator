@@ -17,8 +17,11 @@
     "iconName": {
       "type": "string"
     },
-    "text": {
+    "text_json": {
       "type": "json"
+    },
+    "text": {
+      "type": "richtext"
     }
   }
 }

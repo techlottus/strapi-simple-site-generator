@@ -181,40 +181,70 @@
       "repeatable": false,
       "component": "shared.seo"
     },
-    "summary": {
+    "summary_json": {
       "type": "json"
     },
-    "admissionProfile": {
+    "admissionProfile_json": {
       "type": "json"
     },
-    "graduateProfile": {
+    "graduateProfile_json": {
       "type": "json"
     },
-    "learningResources": {
+    "learningResources_json": {
       "type": "json"
     },
-    "evaluationMethods": {
+    "evaluationMethods_json": {
       "type": "json"
     },
-    "laborField": {
+    "laborField_json": {
       "type": "json"
     },
-    "priceDetail": {
+    "priceDetail_json": {
       "type": "json"
     },
-    "goals": {
+    "goals_json": {
       "type": "json"
     },
-    "certificationsDescription": {
+    "certificationsDescription_json": {
       "type": "json"
     },
-    "admissionRequirements": {
+    "admissionRequirements_json": {
       "type": "json"
     },
     "detail_json": {
       "type": "json"
     },
     "detail": {
+      "type": "richtext"
+    },
+    "summary": {
+      "type": "richtext"
+    },
+    "admissionProfile": {
+      "type": "richtext"
+    },
+    "graduateProfile": {
+      "type": "richtext"
+    },
+    "learningResources": {
+      "type": "richtext"
+    },
+    "evaluationMethods": {
+      "type": "richtext"
+    },
+    "laborField": {
+      "type": "richtext"
+    },
+    "priceDetail": {
+      "type": "richtext"
+    },
+    "goals": {
+      "type": "richtext"
+    },
+    "certificationsDescription": {
+      "type": "richtext"
+    },
+    "admissionRequirements": {
       "type": "richtext"
     }
   }

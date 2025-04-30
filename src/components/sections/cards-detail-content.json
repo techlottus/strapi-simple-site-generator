@@ -27,8 +27,11 @@
       ],
       "default": "left"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

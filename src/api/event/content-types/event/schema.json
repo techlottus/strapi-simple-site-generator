@@ -174,8 +174,11 @@
       "required": true,
       "default": "18:00"
     },
-    "details": {
+    "details_json": {
       "type": "json"
+    },
+    "details": {
+      "type": "richtext"
     }
   }
 }

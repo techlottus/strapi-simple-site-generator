@@ -42,8 +42,11 @@
       "repeatable": true,
       "component": "molecules.button"
     },
-    "text": {
+    "text_json": {
       "type": "json"
+    },
+    "text": {
+      "type": "richtext"
     }
   }
 }

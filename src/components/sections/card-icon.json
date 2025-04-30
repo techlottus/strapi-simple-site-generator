@@ -14,8 +14,11 @@
       "type": "string",
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     },
-    "RichText": {
+    "RichText_json": {
       "type": "json"
+    },
+    "RichText": {
+      "type": "richtext"
     }
   }
 }

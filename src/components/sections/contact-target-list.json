@@ -18,8 +18,11 @@
       "repeatable": true,
       "component": "sections.contact-target-card"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -28,11 +28,17 @@
     "longitude": {
       "type": "string"
     },
-    "considerations": {
+    "considerations_json": {
       "type": "json"
     },
-    "description": {
+    "description_json": {
       "type": "json"
+    },
+    "considerations": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
