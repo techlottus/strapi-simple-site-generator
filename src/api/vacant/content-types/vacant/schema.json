@@ -42,7 +42,7 @@
       "targetField": "title"
     },
     "body": {
-      "type": "richtext"
+      "type": "json"
     }
   }
 }
