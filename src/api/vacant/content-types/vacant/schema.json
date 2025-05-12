@@ -41,9 +41,6 @@
       "type": "uid",
       "targetField": "title"
     },
-    "body_json": {
-      "type": "json"
-    },
     "body": {
       "type": "richtext"
     }
