@@ -42,6 +42,9 @@
       "targetField": "title"
     },
     "body": {
+      "type": "richtext"
+    },
+    "body_json": {
       "type": "json"
     }
   }
