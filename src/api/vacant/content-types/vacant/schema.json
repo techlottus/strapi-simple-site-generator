@@ -40,9 +40,6 @@
     "redirect": {
       "type": "uid",
       "targetField": "title"
-    },
-    "body": {
-      "type": "richtext"
     }
   }
 }
