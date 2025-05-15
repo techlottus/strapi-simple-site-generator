@@ -213,39 +213,6 @@
     },
     "detail_json": {
       "type": "json"
-    },
-    "detail": {
-      "type": "richtext"
-    },
-    "summary": {
-      "type": "richtext"
-    },
-    "admissionProfile": {
-      "type": "richtext"
-    },
-    "graduateProfile": {
-      "type": "richtext"
-    },
-    "learningResources": {
-      "type": "richtext"
-    },
-    "evaluationMethods": {
-      "type": "richtext"
-    },
-    "laborField": {
-      "type": "richtext"
-    },
-    "priceDetail": {
-      "type": "richtext"
-    },
-    "goals": {
-      "type": "richtext"
-    },
-    "certificationsDescription": {
-      "type": "richtext"
-    },
-    "admissionRequirements": {
-      "type": "richtext"
     }
   }
 }

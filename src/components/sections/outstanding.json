@@ -52,9 +52,6 @@
     },
     "content_json": {
       "type": "json"
-    },
-    "content": {
-      "type": "richtext"
     }
   }
 }

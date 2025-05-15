@@ -37,9 +37,6 @@
     },
     "about_json": {
       "type": "json"
-    },
-    "about": {
-      "type": "richtext"
     }
   }
 }
