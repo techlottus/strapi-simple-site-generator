@@ -44,7 +44,12 @@ module.exports = ({ env }) => ({
       ],
     },
   },
-   'import-export-entries': {
+  'strapi-plugin-populate-deep': {
+    config: {
+      defaultDepth: 5,
+    }
+  },
+  'import-export-entries': {
     enabled: true,
     config: {
       // See `Config` section.
