@@ -34,6 +34,9 @@
       "type": "string"
     },
     "description": {
+      "type": "richtext"
+    },
+    "description_json": {
       "type": "json"
     },
     "title_accents": {
