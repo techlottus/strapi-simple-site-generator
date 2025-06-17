@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "text_json": {
-      "type": "JSON"
+      "type": "json"
     },
     "image": {
       "allowedTypes": [
