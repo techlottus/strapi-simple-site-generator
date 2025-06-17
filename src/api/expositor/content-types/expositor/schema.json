@@ -34,9 +34,6 @@
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "expositors"
-    },
-    "bio": {
-      "type": "richtext"
     }
   }
 }

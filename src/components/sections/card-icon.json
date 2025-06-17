@@ -16,9 +16,6 @@
     },
     "RichText_json": {
       "type": "json"
-    },
-    "RichText": {
-      "type": "richtext"
     }
   }
 }

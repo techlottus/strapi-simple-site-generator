@@ -176,9 +176,6 @@
     },
     "details_json": {
       "type": "json"
-    },
-    "details": {
-      "type": "richtext"
     }
   }
 }

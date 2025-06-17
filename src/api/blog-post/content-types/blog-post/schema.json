@@ -91,14 +91,6 @@
         }
       },
       "type": "json"
-    },
-    "body": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "richtext"
     }
   }
 }

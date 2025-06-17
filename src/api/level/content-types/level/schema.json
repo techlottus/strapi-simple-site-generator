@@ -60,9 +60,6 @@
     },
     "requirements_json": {
       "type": "json"
-    },
-    "requirements": {
-      "type": "richtext"
     }
   }
 }
