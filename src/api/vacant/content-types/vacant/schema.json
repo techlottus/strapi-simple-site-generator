@@ -40,6 +40,11 @@
     },
     "body_json": {
       "type": "json"
+    },
+    "seo_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.seo"
     }
   }
 }

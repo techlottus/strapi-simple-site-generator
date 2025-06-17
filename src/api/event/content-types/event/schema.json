@@ -176,6 +176,14 @@
     },
     "details_json": {
       "type": "json"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "seo_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.seo"
     }
   }
 }
