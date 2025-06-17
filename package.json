@@ -13,7 +13,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@code-mancers/strapi-plugin-multi-site-vercel-deploy": "^2.0.11",
     "@strapi/admin": "^4.25.22",
     "@strapi/plugin-color-picker": "^4.25.22",
     "@strapi/plugin-graphql": "^4.25.22",
