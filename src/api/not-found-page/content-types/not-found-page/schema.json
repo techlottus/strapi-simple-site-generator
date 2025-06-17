@@ -35,6 +35,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::layout.layout"
+    },
+    "seo_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.seo"
     }
   }
 }
