@@ -8,6 +8,9 @@
     "content": {
       "type": "richtext"
     },
+    "content_json": {
+      "type": "JSON"
+    },
     "image": {
       "allowedTypes": [
         "images"
