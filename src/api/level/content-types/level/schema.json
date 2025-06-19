@@ -60,6 +60,9 @@
     },
     "requirements_json": {
       "type": "json"
+    },
+    "requirements": {
+      "type": "blocks"
     }
   }
 }

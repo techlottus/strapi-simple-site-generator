@@ -40,6 +40,9 @@
     },
     "body_json": {
       "type": "json"
+    },
+    "body": {
+      "type": "blocks"
     }
   }
 }

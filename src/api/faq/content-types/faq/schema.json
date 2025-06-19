@@ -25,6 +25,9 @@
     },
     "answer_json": {
       "type": "json"
+    },
+    "answer": {
+      "type": "blocks"
     }
   }
 }
