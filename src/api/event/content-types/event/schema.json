@@ -176,6 +176,9 @@
     },
     "details_json": {
       "type": "json"
+    },
+    "details": {
+      "type": "blocks"
     }
   }
 }

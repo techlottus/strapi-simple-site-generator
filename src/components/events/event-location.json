@@ -33,6 +33,12 @@
     },
     "description_json": {
       "type": "json"
+    },
+    "considerations": {
+      "type": "blocks"
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }

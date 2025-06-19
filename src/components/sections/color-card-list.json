@@ -19,6 +19,12 @@
     },
     "alternativeText_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "alternativeText": {
+      "type": "blocks"
     }
   }
 }

@@ -29,6 +29,18 @@
     "admissionRequirements_json": {
       "type": "json"
     },    
+    "admissionProfile": {
+      "type": "blocks"
+    },    
+    "graduateProfile": {
+      "type": "blocks"
+    },    
+    "laborField": {
+      "type": "blocks"
+    },    
+    "admissionRequirements": {
+      "type": "blocks"
+    },    
     "programStatistics": {
       "type": "component",
       "repeatable": true,
@@ -41,6 +53,9 @@
     },
     "curriculumDescription_json": {
       "type": "json"
+    },    
+    "curriculumDescription": {
+      "type": "blocks"
     },    
     "summaries": {
       "displayName": "Summary",

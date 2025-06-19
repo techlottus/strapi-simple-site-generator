@@ -213,6 +213,39 @@
     },
     "detail_json": {
       "type": "json"
+    },
+    "summary": {
+      "type": "blocks"
+    },
+    "admissionProfile": {
+      "type": "blocks"
+    },
+    "graduateProfile": {
+      "type": "blocks"
+    },
+    "learningResources": {
+      "type": "blocks"
+    },
+    "evaluationMethods": {
+      "type": "blocks"
+    },
+    "laborField": {
+      "type": "blocks"
+    },
+    "priceDetail": {
+      "type": "blocks"
+    },
+    "goals": {
+      "type": "blocks"
+    },
+    "certificationsDescription": {
+      "type": "blocks"
+    },
+    "admissionRequirements": {
+      "type": "blocks"
+    },
+    "detail": {
+      "type": "blocks"
     }
   }
 }

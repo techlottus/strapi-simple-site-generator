@@ -24,6 +24,9 @@
     },
     "detail_json": {
       "type": "json"
+    },
+    "detail": {
+      "type": "blocks"
     }
   }
 }
