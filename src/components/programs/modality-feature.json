@@ -17,14 +17,26 @@
     "modalityDescription": {
       "type": "text"
     },
+    "admissionProfile_json": {
+      "type": "json"
+    },
     "admissionProfile": {
       "type": "richtext"
+    },
+    "graduateProfile_json": {
+      "type": "json"
     },
     "graduateProfile": {
       "type": "richtext"
     },
+    "laborField_json": {
+      "type": "json"
+    },
     "laborField": {
       "type": "richtext"
+    },
+    "admissionRequirements_json": {
+      "type": "json"
     },
     "admissionRequirements": {
       "type": "richtext"
@@ -38,6 +50,9 @@
       "type": "component",
       "repeatable": true,
       "component": "programs.curriculum-by-campus"
+    },
+    "curriculumDescription_json": {
+      "type": "json"
     },
     "curriculumDescription": {
       "type": "richtext"

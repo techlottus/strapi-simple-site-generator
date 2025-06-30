@@ -1,4 +1,5 @@
 {
+  "kind": "collectionType",
   "collectionName": "openings",
   "info": {
     "singularName": "opening",
@@ -26,6 +27,5 @@
       "repeatable": false,
       "component": "programs.schedule"
     }
-  },
-  "kind": "collectionType"
+  }
 }

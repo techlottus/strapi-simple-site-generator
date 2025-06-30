@@ -9,6 +9,9 @@
     "title": {
       "type": "string"
     },
+    "content_json": {
+      "type": "json"
+    },
     "content": {
       "type": "richtext"
     }

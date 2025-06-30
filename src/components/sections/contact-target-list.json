@@ -12,14 +12,17 @@
     "subtitle": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "cards": {
       "displayName": "ContactTargetCard",
       "type": "component",
       "repeatable": true,
       "component": "sections.contact-target-card"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -14,13 +14,16 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "modalities": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::modality.modality"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

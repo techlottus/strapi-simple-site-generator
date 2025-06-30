@@ -31,9 +31,6 @@
     "backgroundColor": {
       "type": "string"
     },
-    "text": {
-      "type": "richtext"
-    },
     "provider": {
       "type": "enumeration",
       "enum": [
@@ -46,6 +43,12 @@
       "type": "component",
       "repeatable": true,
       "component": "molecules.button"
+    },
+    "text_json": {
+      "type": "json"
+    },
+    "text": {
+      "type": "richtext"
     }
   }
 }

@@ -8,6 +8,9 @@
     "text": {
       "type": "richtext"
     },
+    "text_json": {
+      "type": "json"
+    },
     "image": {
       "allowedTypes": [
         "images"

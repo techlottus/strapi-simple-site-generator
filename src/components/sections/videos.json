@@ -9,13 +9,16 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "videos": {
       "type": "component",
       "repeatable": true,
       "component": "sections.video-item"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

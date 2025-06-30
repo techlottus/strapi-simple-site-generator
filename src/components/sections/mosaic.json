@@ -9,13 +9,16 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "images": {
       "type": "component",
       "repeatable": true,
       "component": "molecules.image"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -14,6 +14,9 @@
       "relation": "oneToMany",
       "target": "api::extpost-category.extpost-category"
     },
+    "description_json": {
+      "type": "json"
+    },
     "description": {
       "type": "richtext"
     }

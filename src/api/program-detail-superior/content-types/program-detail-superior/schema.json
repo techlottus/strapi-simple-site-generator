@@ -77,9 +77,6 @@
     "rvoeTitle": {
       "type": "string"
     },
-    "rvoeDescription": {
-      "type": "richtext"
-    },
     "rvoeImages": {
       "type": "component",
       "repeatable": true,
@@ -94,6 +91,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::layout.layout"
+    },
+    "rvoeDescription_json": {
+      "type": "json"
+    },
+    "rvoeDescription": {
+      "type": "richtext"
     }
   }
 }

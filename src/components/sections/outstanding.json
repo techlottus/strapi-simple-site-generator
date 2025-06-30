@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -52,6 +49,12 @@
         "light"
       ],
       "default": "dark"
+    },
+    "content_json": {
+      "type": "json"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

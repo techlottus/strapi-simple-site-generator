@@ -17,15 +17,17 @@
       "required": true,
       "unique": true
     },
-    "answer": {
-      "type": "richtext",
-      "required": true
-    },
     "faqCategory": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::faq-category.faq-category",
       "inversedBy": "faqs"
+    },
+    "answer_json": {
+      "type": "json"
+    },
+    "answer": {
+      "type": "richtext"
     }
   }
 }

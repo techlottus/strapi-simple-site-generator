@@ -14,11 +14,11 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "slug": {
       "type": "text",
-      "required": true,
+      "required": false,
       "unique": true
     },
     "sections": {
@@ -48,12 +48,17 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo",
-      "required": true
+      "required": false
     },
     "layout": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::layout.layout"
+    },
+    "seo_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.seo"
     }
   }
 }

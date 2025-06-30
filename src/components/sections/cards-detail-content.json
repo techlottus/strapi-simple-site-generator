@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "links": {
       "type": "component",
       "repeatable": true,
@@ -29,6 +26,12 @@
         "left"
       ],
       "default": "left"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

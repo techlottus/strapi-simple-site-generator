@@ -1,18 +1,22 @@
 {
   "collectionName": "components_molecules_informative_icons",
   "info": {
-    "displayName": "informativeIcon"
+    "displayName": "informativeIcon",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "iconName": {
       "type": "string"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

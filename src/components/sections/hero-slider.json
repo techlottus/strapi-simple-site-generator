@@ -9,13 +9,16 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "slide": {
       "type": "component",
       "repeatable": true,
       "component": "sections.hero"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

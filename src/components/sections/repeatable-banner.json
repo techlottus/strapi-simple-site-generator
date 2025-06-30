@@ -10,13 +10,16 @@
       "type": "string",
       "required": false
     },
-    "description": {
-      "type": "richtext"
-    },
     "banners": {
       "type": "component",
       "repeatable": true,
       "component": "sections.banner"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

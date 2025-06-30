@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "type": {
       "type": "enumeration",
       "enum": [
@@ -46,6 +43,12 @@
       "type": "component",
       "repeatable": false,
       "component": "molecules.button"
+    },
+    "description_json": {
+      "type": "json"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
