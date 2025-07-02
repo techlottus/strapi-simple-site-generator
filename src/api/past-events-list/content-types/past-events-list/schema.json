@@ -34,13 +34,16 @@
       "relation": "oneToOne",
       "target": "api::layout.layout"
     },
-    "description": {
+    "description_json": {
       "type": "json"
     },
     "seo_section": {
       "type": "component",
       "repeatable": false,
       "component": "sections.seo"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
