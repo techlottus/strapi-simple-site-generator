@@ -41,6 +41,9 @@
     "body_json": {
       "type": "json"
     },
+    "body": {
+      "type": "blocks"
+    },
     "seo_section": {
       "type": "component",
       "repeatable": false,

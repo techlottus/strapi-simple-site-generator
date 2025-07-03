@@ -17,6 +17,9 @@
     },
     "subtitle_json": {
       "type": "json"
+    },
+    "subtitle": {
+      "type": "blocks"
     }
   }
 }

@@ -41,6 +41,15 @@
     },
     "descriptionStatistics_json": {
       "type": "json"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "descriptionCards": {
+      "type": "blocks"
+    },
+    "descriptionStatistics": {
+      "type": "blocks"
     }
   }
 }

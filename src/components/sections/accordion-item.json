@@ -11,6 +11,9 @@
     },
     "content_json": {
       "type": "json"
+    },
+    "content": {
+      "type": "blocks"
     }
   }
 }

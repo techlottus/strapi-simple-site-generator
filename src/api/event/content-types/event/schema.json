@@ -177,6 +177,9 @@
     "details_json": {
       "type": "json"
     },
+    "details": {
+      "type": "blocks"
+    },
     "seo_section": {
       "type": "component",
       "repeatable": false,

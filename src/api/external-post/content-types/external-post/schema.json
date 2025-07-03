@@ -40,6 +40,9 @@
     },
     "abstract_json": {
       "type": "json"
+    },
+    "abstract": {
+      "type": "blocks"
     }
   }
 }
