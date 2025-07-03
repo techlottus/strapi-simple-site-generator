@@ -6,9 +6,6 @@
   "options": {},
   "attributes": {
     "text_json": {
-      "type": "JSON"
-    },
-    "text_json": {
       "type": "json"
     },
     "image": {
