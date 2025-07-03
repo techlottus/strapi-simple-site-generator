@@ -179,6 +179,11 @@
     },
     "details": {
       "type": "blocks"
+    },
+    "seo_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.seo"
     }
   }
 }
