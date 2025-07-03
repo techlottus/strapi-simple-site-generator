@@ -40,9 +40,6 @@
     },
     "abstract_json": {
       "type": "json"
-    },
-    "abstract": {
-      "type": "richtext"
     }
   }
 }

@@ -22,9 +22,6 @@
     },
     "testimonialText_json": {
       "type": "json"
-    },
-    "testimonialText": {
-      "type": "richtext"
     }
   }
 }

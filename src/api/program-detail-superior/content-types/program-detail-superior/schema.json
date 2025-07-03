@@ -94,9 +94,6 @@
     },
     "rvoeDescription_json": {
       "type": "json"
-    },
-    "rvoeDescription": {
-      "type": "richtext"
     }
   }
 }
