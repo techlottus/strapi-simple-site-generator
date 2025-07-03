@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_slide_certifications",
   "info": {
-    "displayName": "slideCertifications"
+    "displayName": "slideCertifications",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,11 +10,15 @@
       "type": "json"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "text": {
+      "type": "blocks"
     }
   }
 }

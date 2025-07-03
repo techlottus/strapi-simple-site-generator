@@ -41,6 +41,9 @@
       "type": "component",
       "repeatable": false,
       "component": "sections.seo"
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }
