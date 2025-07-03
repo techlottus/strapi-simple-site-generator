@@ -5,8 +5,8 @@
   },
   "options": {},
   "attributes": {
-    "text": {
-      "type": "richtext"
+    "text_json": {
+      "type": "JSON"
     },
     "text_json": {
       "type": "json"

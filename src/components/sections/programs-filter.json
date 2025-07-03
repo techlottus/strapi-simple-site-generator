@@ -21,9 +21,6 @@
     },
     "description_json": {
       "type": "json"
-    },
-    "description": {
-      "type": "richtext"
     }
   }
 }

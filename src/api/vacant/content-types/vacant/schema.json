@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "body": {
-      "type": "richtext"
-    },
     "title": {
       "type": "string"
     },

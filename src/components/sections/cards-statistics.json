@@ -41,15 +41,6 @@
     },
     "descriptionStatistics_json": {
       "type": "json"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "descriptionCards": {
-      "type": "richtext"
-    },
-    "descriptionStatistics": {
-      "type": "richtext"
     }
   }
 }

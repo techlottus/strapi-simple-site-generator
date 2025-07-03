@@ -19,9 +19,6 @@
     },
     "text_json": {
       "type": "json"
-    },
-    "text": {
-      "type": "richtext"
     }
   }
 }

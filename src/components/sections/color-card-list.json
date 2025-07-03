@@ -19,12 +19,6 @@
     },
     "alternativeText_json": {
       "type": "json"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "alternativeText": {
-      "type": "richtext"
     }
   }
 }
