@@ -33,9 +33,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "description_json": {
       "type": "json"
     },
