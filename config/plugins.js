@@ -24,17 +24,18 @@ module.exports = ({ env }) => ({
     config: {
       // See `Config` section.
     },
-  },
-  graphql: {
-    config: {
-      endpoint: '/graphql',
-      shadowCRUD: true,
-      landingPage: true,
-      depthLimit: 10,
-      amountLimit: 100,
-      apolloServer: {
-        tracing: false,
-      },
-    },
-  },
+  }
+  // ,
+  // graphql: {
+  //   config: {
+  //     endpoint: '/graphql',
+  //     shadowCRUD: true,
+  //     landingPage: true,
+  //     depthLimit: 10,
+  //     amountLimit: 100,
+  //     apolloServer: {
+  //       tracing: false,
+  //     },
+  //   },
+  // },
 });
