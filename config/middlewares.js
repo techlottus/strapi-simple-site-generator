@@ -6,12 +6,16 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
+          "connect-src": ["'self'", "https:", "apollo-server-landing-page.cdn.apollographql.com"],
+          "script-src": ["'self'", "'unsafe-inline'", "apollo-server-landing-page.cdn.apollographql.com"],
+          "style-src": ["'self'", "'unsafe-inline'", "apollo-server-landing-page.cdn.apollographql.com"],
+          "frame-src": ["sandbox.embed.apollographql.com"],
           'img-src': [
             "'self'",
             'data:',
             'blob:',
             'dl.airtable.com',
+            "apollo-server-landing-page.cdn.apollographql.com"
             `${process.env.AWS_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com`, // change here
           ],
           'media-src': [
