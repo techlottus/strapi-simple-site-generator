@@ -25,9 +25,6 @@
     "mysql": "^2.18.1",
     "pg": "^8.8.0",
     "pm2": "^5.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "^5.2.0",
     "strapi-plugin-import-export-entries": "^1.23.1",
     "strapi-plugin-redirects": "^0.0.6"
   },
