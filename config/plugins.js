@@ -10,13 +10,19 @@ module.exports = ({ env }) => ({
     config: {
       provider: 'aws-s3',
       providerOptions: {
-        accessKeyId: env('AWS_ACCESS_KEY_ID'),
-        secretAccessKey: env('AWS_ACCESS_SECRET'),
-        region: env('AWS_REGION'),
-        params: {
-          Bucket: `${env('AWS_BUCKET')}/${env('AWS_FOLDER')}`,
+        baseUrl: env('AWS_BUCKET_URL'),
+        rootPath: env('AWS_FOLDER'),
+        s3Options: {
+          credentials: {
+            accessKeyId: env('AWS_ACCESS_KEY_ID'),
+            secretAccessKey: env('AWS_ACCESS_SECRET'),
+          },
+          region: env('AWS_REGION'),
+          params: {
+            Bucket: env('AWS_BUCKET'),
+          },
         },
-      },
+      }
     },
   },
   'import-export-entries': {
@@ -24,18 +30,17 @@ module.exports = ({ env }) => ({
     config: {
       // See `Config` section.
     },
-  }
-  // ,
-  // graphql: {
-  //   config: {
-  //     endpoint: '/graphql',
-  //     shadowCRUD: true,
-  //     landingPage: true,
-  //     depthLimit: 10,
-  //     amountLimit: 100,
-  //     apolloServer: {
-  //       tracing: false,
-  //     },
-  //   },
-  // },
+  },
+  graphql: {
+    config: {
+      endpoint: '/graphql',
+      shadowCRUD: true,
+      landingPage: true,
+      depthLimit: 10,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
+  },
 });
