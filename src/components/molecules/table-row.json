@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_molecules_table_rows",
+  "info": {
+    "displayName": "TableRow",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "tableCell": {
+      "displayName": "TableCell",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.table-cell"
+    }
+  }
+}
