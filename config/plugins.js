@@ -33,7 +33,7 @@ module.exports = ({ env }) => ({
       endpoint: '/graphql',
       shadowCRUD: true,
       landingPage: true,
-      depthLimit: 10,
+      depthLimit: 20,
       amountLimit: 100,
       apolloServer: {
         tracing: false,
