@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_tables",
+  "info": {
+    "displayName": "Table",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tableHead": {
+      "displayName": "TableRow",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.table-row"
+    },
+    "tableBody": {
+      "displayName": "TableRow",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.table-row"
+    }
+  }
+}
