@@ -184,6 +184,11 @@
       "type": "component",
       "repeatable": false,
       "component": "sections.seo"
+    },
+    "social_medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media.social-media"
     }
   }
 }
