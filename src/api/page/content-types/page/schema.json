@@ -66,11 +66,6 @@
       ],
       "required": true
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
     "seo_section": {
       "type": "component",
       "repeatable": false,

@@ -564,7 +564,6 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'sections.events-card-container'
       ]
     >;
-    seo: Attribute.Component<'shared.seo'>;
     seo_section: Attribute.Component<'sections.seo'>;
     slug: Attribute.Text & Attribute.Unique;
     title: Attribute.String;
@@ -653,7 +652,6 @@ export interface ApiNotFoundPageNotFoundPage extends Schema.SingleType {
     >;
     publishedAt: Attribute.DateTime;
     sections: Attribute.DynamicZone<['sections.web-error']>;
-    seo: Attribute.Component<'shared.seo'>;
     seo_section: Attribute.Component<'sections.seo'>;
     slug: Attribute.String & Attribute.DefaultTo<'not-found'>;
     title: Attribute.String;
@@ -727,7 +725,6 @@ export interface ApiPagePage extends Schema.CollectionType {
       ]
     > &
       Attribute.Required;
-    seo: Attribute.Component<'shared.seo'>;
     seo_section: Attribute.Component<'sections.seo'>;
     slug: Attribute.String;
     title: Attribute.String;
