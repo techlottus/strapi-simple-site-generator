@@ -1,3 +1,4 @@
+const env = require('dotenv').config().parsed
 
 module.exports = ({
   apps: [
@@ -72,21 +73,21 @@ module.exports = ({
     //   }
     // },
     {
-      name: process.env.NAME4,
-      script: process.env.SCRIPT,
-      args: process.env.ARGS,
+      name: env.NAME4,
+      script: env.SCRIPT,
+      args: env.ARGS,
       env: {
-        NODE_ENV: process.env.NAME4,
-        HOST_PORT: process.env.HOST_PORT_TEST4,
-        DATABASE_HOST_PRODUCTION: process.env.DATABASE_HOST_PRODUCTION4, 
-        DATABASE_PORT_PRODUCTION: process.env.DATABASE_PORT_PRODUCTION4,
-        DATABASE_USER_PRODUCTION: process.env.DATABASE_USER_PRODUCTION4,
-        DATABASE_PASS_PRODUCTION: process.env.DATABASE_PASS_PRODUCTION4,
-        DATABASE_NAME: process.env.DATABASE_NAME_TEST4,
-        ADMIN_JWT_SECRET: process.env.ADMIN_JWT_SECRET,
-        DOMAIN_URL: process.env.DOMAIN_URL4,
-        DATABASE_SSL: process.env.DATABASE_SSL,
-        AWS_FOLDER: process.env.AWS_FOLDER4
+        NODE_ENV: env.NAME4,
+        HOST_PORT: env.HOST_PORT_TEST4,
+        DATABASE_HOST_PRODUCTION: env.DATABASE_HOST_PRODUCTION4, 
+        DATABASE_PORT_PRODUCTION: env.DATABASE_PORT_PRODUCTION4,
+        DATABASE_USER_PRODUCTION: env.DATABASE_USER_PRODUCTION4,
+        DATABASE_PASS_PRODUCTION: env.DATABASE_PASS_PRODUCTION4,
+        DATABASE_NAME: env.DATABASE_NAME_TEST4,
+        ADMIN_JWT_SECRET: env.ADMIN_JWT_SECRET,
+        DOMAIN_URL: env.DOMAIN_URL4,
+        DATABASE_SSL: env.DATABASE_SSL,
+        AWS_FOLDER: env.AWS_FOLDER4
       }
     }
     // {
