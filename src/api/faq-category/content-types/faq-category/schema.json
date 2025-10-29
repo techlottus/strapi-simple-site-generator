@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs_categorys",
+  "info": {
+    "singularName": "faq-category",
+    "pluralName": "faqs-categorys",
+    "displayName": "Categoría-faqs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "preguntas_frecuentes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq.faq",
+      "mappedBy": "categoria_faq"
+    }
+  }
+}
