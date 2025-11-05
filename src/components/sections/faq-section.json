@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_faq_sections",
+  "info": {
+    "displayName": "faq-section",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "organisms.faqs"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

@@ -35,7 +35,8 @@
         "sections.image-card-list",
         "sections.promo-link-list",
         "sections.text-content",
-        "sections.events-card-container"
+        "sections.events-card-container",
+        "sections.faq-section"
       ]
     },
     "layout": {
