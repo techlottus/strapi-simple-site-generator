@@ -62,7 +62,8 @@
         "organisms.tab-list",
         "sections.video-image",
         "sections.banner-cards",
-        "sections.table"
+        "sections.table",
+        "sections.faq-section"
       ],
       "required": true
     },
