@@ -4,7 +4,8 @@
   "info": {
     "singularName": "faq",
     "pluralName": "faqs",
-    "displayName": "Preguntas frecuentes"
+    "displayName": "Preguntas frecuentes",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,7 +14,8 @@
   "attributes": {
     "question": {
       "type": "text",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "answer": {
       "type": "blocks",
