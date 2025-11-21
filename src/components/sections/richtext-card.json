@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_richtext_cards",
+  "info": {
+    "displayName": "richtextCard",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "richtext": {
+      "type": "blocks"
+    },
+    "card": {
+      "displayName": "card-button",
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.card-button"
+    },
+    "bg_image_desktop": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bg_image_mobile": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -63,7 +63,8 @@
         "sections.video-image",
         "sections.banner-cards",
         "sections.table",
-        "sections.faq-section"
+        "sections.faq-section",
+        "sections.richtext-card"
       ],
       "required": true
     },

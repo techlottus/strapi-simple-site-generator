@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_molecules_card_buttons",
+  "info": {
+    "displayName": "card-button"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "circle_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    }
+  }
+}

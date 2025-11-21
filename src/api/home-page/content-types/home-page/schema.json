@@ -24,19 +24,17 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "sections.banner",
-        "sections.carousel",
-        "sections.overlay-card-list",
         "sections.hero-slider",
-        "sections.hero",
         "sections.statistics-card-list",
-        "sections.statistics-card",
-        "sections.text-image",
-        "sections.image-card-list",
-        "sections.promo-link-list",
-        "sections.text-content",
-        "sections.events-card-container",
-        "sections.faq-section"
+        "sections.rich-text-image",
+        "sections.icon-text-list-image",
+        "sections.card-list",
+        "sections.rockstar-info-list",
+        "sections.banner-cards",
+        "sections.banner",
+        "sections.leaderboard",
+        "sections.faq-section",
+        "sections.richtext-card"
       ]
     },
     "layout": {
