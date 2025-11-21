@@ -130,7 +130,6 @@ export interface MoleculesInformativeIcon extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     iconName: Attribute.String;
     title: Attribute.String;
   };
@@ -216,6 +215,23 @@ export interface MoleculesTableRow extends Schema.Component {
   };
 }
 
+export interface OrganismsFaqs extends Schema.Component {
+  collectionName: 'components_organisms_faqs';
+  info: {
+    displayName: 'faqs';
+    icon: 'bulletList';
+  };
+  attributes: {
+    categoria_faq: Attribute.Relation<
+      'organisms.faqs',
+      'oneToOne',
+      'api::faq-category.faq-category'
+    >;
+    max_entries: Attribute.Integer;
+    sortdate: Attribute.Enumeration<['erliest', 'latest']>;
+  };
+}
+
 export interface OrganismsFooterSection extends Schema.Component {
   collectionName: 'components_organisms_footer_sections';
   info: {
@@ -289,7 +305,6 @@ export interface SectionsAccordion extends Schema.Component {
   attributes: {
     accordionItems: Attribute.Component<'sections.accordion-item', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     subtitle: Attribute.String;
     title: Attribute.String;
   };
@@ -303,7 +318,6 @@ export interface SectionsAccordionItem extends Schema.Component {
   };
   attributes: {
     content: Attribute.Blocks;
-    content_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -318,7 +332,6 @@ export interface SectionsAlert extends Schema.Component {
     iconName: Attribute.String;
     links: Attribute.Component<'sections.link', true>;
     text: Attribute.Blocks;
-    text_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -371,9 +384,11 @@ export interface SectionsBannerCards extends Schema.Component {
   attributes: {
     button: Attribute.Component<'molecules.button'>;
     cardIconItem: Attribute.Component<'sections.card-icon', true>;
+    description: Attribute.Blocks;
     desktopImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     mobileImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     tabletImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    title: Attribute.String;
   };
 }
 
@@ -409,7 +424,6 @@ export interface SectionsCard extends Schema.Component {
   };
   attributes: {
     content: Attribute.Blocks;
-    content_json: Attribute.JSON;
     image: Attribute.Media<'images'>;
     imageAspectRatio: Attribute.String & Attribute.DefaultTo<'2/1'>;
     linkText: Attribute.String;
@@ -432,7 +446,6 @@ export interface SectionsCardIcon extends Schema.Component {
     iconColor: Attribute.String;
     IconName: Attribute.String;
     RichText: Attribute.Blocks;
-    RichText_json: Attribute.JSON;
   };
 }
 
@@ -457,7 +470,6 @@ export interface SectionsCardsDetailContent extends Schema.Component {
   attributes: {
     cards: Attribute.Component<'sections.card', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     links: Attribute.Component<'sections.link', true>;
     textPosition: Attribute.Enumeration<['right', 'left']> &
       Attribute.DefaultTo<'left'>;
@@ -476,11 +488,8 @@ export interface SectionsCardsStatistics extends Schema.Component {
     cardsPosition: Attribute.Enumeration<['right', 'left']> &
       Attribute.DefaultTo<'left'>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     descriptionCards: Attribute.Blocks;
-    descriptionCards_json: Attribute.JSON;
     descriptionStatistics: Attribute.Blocks;
-    descriptionStatistics_json: Attribute.JSON;
     statistics: Attribute.Component<'sections.statistics-card', true>;
     title: Attribute.String;
     titleCards: Attribute.String;
@@ -498,7 +507,6 @@ export interface SectionsCardsVideoContent extends Schema.Component {
     button: Attribute.Component<'molecules.button'>;
     cards: Attribute.Component<'sections.card', true>;
     subtitle: Attribute.Blocks;
-    subtitle_json: Attribute.JSON;
     textPosition: Attribute.Enumeration<['right', 'left']>;
     title: Attribute.String;
     videoItem: Attribute.Component<'sections.video-item'>;
@@ -516,7 +524,6 @@ export interface SectionsCarousel extends Schema.Component {
     button: Attribute.Component<'molecules.button'>;
     cards: Attribute.Component<'sections.card', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     images: Attribute.Component<'sections.mediaquery-images', true>;
     origin: Attribute.Enumeration<['center', 'auto']> &
       Attribute.DefaultTo<'center'>;
@@ -536,7 +543,6 @@ export interface SectionsColorCard extends Schema.Component {
   attributes: {
     classNames: Attribute.String;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     headline: Attribute.String;
     subtitle: Attribute.String;
     title: Attribute.String;
@@ -551,10 +557,8 @@ export interface SectionsColorCardList extends Schema.Component {
   };
   attributes: {
     alternativeText: Attribute.Blocks;
-    alternativeText_json: Attribute.JSON;
     cards: Attribute.Component<'sections.color-card', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -584,7 +588,6 @@ export interface SectionsContactTargetList extends Schema.Component {
   attributes: {
     cards: Attribute.Component<'sections.contact-target-card', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     subtitle: Attribute.String;
     title: Attribute.String;
   };
@@ -611,6 +614,20 @@ export interface SectionsEventsCardContainer extends Schema.Component {
     max_entries: Attribute.Integer &
       Attribute.Required &
       Attribute.DefaultTo<5>;
+    title: Attribute.String;
+  };
+}
+
+export interface SectionsFaqSection extends Schema.Component {
+  collectionName: 'components_sections_faq_sections';
+  info: {
+    description: '';
+    displayName: 'faq-section';
+    icon: 'layer';
+  };
+  attributes: {
+    description: Attribute.Blocks;
+    faqs: Attribute.Component<'organisms.faqs'>;
     title: Attribute.String;
   };
 }
@@ -677,7 +694,6 @@ export interface SectionsHeroSlider extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     slide: Attribute.Component<'sections.hero', true>;
     title: Attribute.String;
   };
@@ -692,7 +708,6 @@ export interface SectionsIconTextItem extends Schema.Component {
   attributes: {
     iconName: Attribute.String;
     text: Attribute.Blocks;
-    text_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -705,7 +720,6 @@ export interface SectionsIconTextListImage extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     desktopImage: Attribute.Media<'images'>;
     iconTextList: Attribute.Component<'sections.icon-text-item', true>;
     imagePosition: Attribute.Enumeration<['left', 'right']> &
@@ -755,7 +769,6 @@ export interface SectionsIntroductionImage extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     images: Attribute.Component<'sections.mediaquery-images', true>;
     title: Attribute.String;
   };
@@ -871,7 +884,6 @@ export interface SectionsMosaic extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     images: Attribute.Component<'molecules.image', true>;
     title: Attribute.String;
   };
@@ -889,7 +901,6 @@ export interface SectionsOutstanding extends Schema.Component {
       Attribute.DefaultTo<'w-full'>;
     button: Attribute.Component<'molecules.button'>;
     content: Attribute.Blocks;
-    content_json: Attribute.JSON;
     contentVariant: Attribute.Enumeration<['dark', 'light']> &
       Attribute.DefaultTo<'dark'>;
     image: Attribute.Media<'images'> & Attribute.Required;
@@ -984,7 +995,6 @@ export interface SectionsRepeatableBanner extends Schema.Component {
   attributes: {
     banners: Attribute.Component<'sections.banner', true>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -1004,7 +1014,6 @@ export interface SectionsRichTextImage extends Schema.Component {
     imagePosition: Attribute.Enumeration<['left', 'right']> &
       Attribute.DefaultTo<'right'>;
     text: Attribute.Blocks;
-    text_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -1038,10 +1047,35 @@ export interface SectionsRichTextVideo extends Schema.Component {
       Attribute.DefaultTo<'Youtube'>;
     providerId: Attribute.String;
     text: Attribute.Blocks;
-    text_json: Attribute.JSON;
     title: Attribute.String;
     videoPosition: Attribute.Enumeration<['left', 'right']> &
       Attribute.DefaultTo<'left'>;
+  };
+}
+
+export interface SectionsRockstarInfo extends Schema.Component {
+  collectionName: 'components_sections_rockstar_infos';
+  info: {
+    displayName: 'RockstarInfo';
+    icon: 'book';
+  };
+  attributes: {
+    detail: Attribute.Blocks;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    name: Attribute.String;
+  };
+}
+
+export interface SectionsRockstarInfoList extends Schema.Component {
+  collectionName: 'components_sections_rockstar_info_lists';
+  info: {
+    displayName: 'RockstarInfoList';
+    icon: 'bulletList';
+  };
+  attributes: {
+    description: Attribute.Blocks;
+    rockstars: Attribute.Component<'sections.rockstar-info', true>;
+    title: Attribute.String;
   };
 }
 
@@ -1154,7 +1188,6 @@ export interface SectionsTestimonialCard extends Schema.Component {
     subtitle: Attribute.String;
     testimonialImage: Attribute.Media<'images'>;
     testimonialText: Attribute.Blocks;
-    testimonialText_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -1170,7 +1203,6 @@ export interface SectionsTestimonialSlider extends Schema.Component {
     bgImageMobile: Attribute.Media<'images'>;
     bgImageTablet: Attribute.Media<'images'>;
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     testimonialCards: Attribute.Component<'sections.testimonial-card', true>;
     title: Attribute.String;
   };
@@ -1185,7 +1217,6 @@ export interface SectionsTextContent extends Schema.Component {
   attributes: {
     subtitle: Attribute.String;
     text: Attribute.Blocks;
-    text_json: Attribute.JSON;
     title: Attribute.String;
   };
 }
@@ -1198,7 +1229,6 @@ export interface SectionsTextImage extends Schema.Component {
   };
   attributes: {
     content: Attribute.Blocks;
-    content_json: Attribute.JSON;
     image: Attribute.Media<'images'>;
   };
 }
@@ -1237,7 +1267,6 @@ export interface SectionsVideos extends Schema.Component {
   };
   attributes: {
     description: Attribute.Blocks;
-    description_json: Attribute.JSON;
     title: Attribute.String;
     videos: Attribute.Component<'sections.video-item', true>;
   };
@@ -1277,6 +1306,7 @@ declare module '@strapi/types' {
       'molecules.submenu-item-2': MoleculesSubmenuItem2;
       'molecules.submenu-item-3': MoleculesSubmenuItem3;
       'molecules.table-row': MoleculesTableRow;
+      'organisms.faqs': OrganismsFaqs;
       'organisms.footer-section': OrganismsFooterSection;
       'organisms.tab': OrganismsTab;
       'organisms.tab-list': OrganismsTabList;
@@ -1299,6 +1329,7 @@ declare module '@strapi/types' {
       'sections.contact-target-list': SectionsContactTargetList;
       'sections.container-outstanding-list': SectionsContainerOutstandingList;
       'sections.events-card-container': SectionsEventsCardContainer;
+      'sections.faq-section': SectionsFaqSection;
       'sections.google-map': SectionsGoogleMap;
       'sections.hero': SectionsHero;
       'sections.hero-slider': SectionsHeroSlider;
@@ -1325,6 +1356,8 @@ declare module '@strapi/types' {
       'sections.rich-text-image': SectionsRichTextImage;
       'sections.rich-text-image-bg-image': SectionsRichTextImageBgImage;
       'sections.rich-text-video': SectionsRichTextVideo;
+      'sections.rockstar-info': SectionsRockstarInfo;
+      'sections.rockstar-info-list': SectionsRockstarInfoList;
       'sections.script-pixel': SectionsScriptPixel;
       'sections.seo': SectionsSeo;
       'sections.statistics-card': SectionsStatisticsCard;

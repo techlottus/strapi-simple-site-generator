@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "content_json": {
-      "type": "json"
-    },
     "image": {
       "type": "media",
       "multiple": false,

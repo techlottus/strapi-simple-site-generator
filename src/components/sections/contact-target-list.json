@@ -18,9 +18,6 @@
       "repeatable": true,
       "component": "sections.contact-target-card"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

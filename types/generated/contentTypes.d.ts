@@ -375,7 +375,6 @@ export interface ApiBrandBrand extends Schema.CollectionType {
   };
   attributes: {
     about: Attribute.Blocks;
-    about_json: Attribute.JSON;
     contact: Attribute.String;
     contactEmail: Attribute.Email;
     contactPhone: Attribute.String;
@@ -397,6 +396,71 @@ export interface ApiBrandBrand extends Schema.CollectionType {
     > &
       Attribute.Private;
     website: Attribute.String;
+  };
+}
+
+export interface ApiFaqCategoryFaqCategory extends Schema.CollectionType {
+  collectionName: 'faqs_categorys';
+  info: {
+    description: '';
+    displayName: 'Categor\u00EDa-faqs';
+    pluralName: 'faqs-categorys';
+    singularName: 'faq-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::faq-category.faq-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    preguntas_frecuentes: Attribute.Relation<
+      'api::faq-category.faq-category',
+      'oneToMany',
+      'api::faq.faq'
+    >;
+    publishedAt: Attribute.DateTime;
+    title: Attribute.String & Attribute.Required;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<
+      'api::faq-category.faq-category',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiFaqFaq extends Schema.CollectionType {
+  collectionName: 'faqs';
+  info: {
+    description: '';
+    displayName: 'Preguntas frecuentes';
+    pluralName: 'faqs';
+    singularName: 'faq';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    answer: Attribute.Blocks & Attribute.Required;
+    categoria_faq: Attribute.Relation<
+      'api::faq.faq',
+      'manyToOne',
+      'api::faq-category.faq-category'
+    >;
+    createdAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::faq.faq', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    publishedAt: Attribute.DateTime;
+    question: Attribute.Text & Attribute.Required & Attribute.Unique;
+    updatedAt: Attribute.DateTime;
+    updatedBy: Attribute.Relation<'api::faq.faq', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
   };
 }
 
@@ -561,7 +625,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'sections.image-card-list',
         'sections.promo-link-list',
         'sections.text-content',
-        'sections.events-card-container'
+        'sections.events-card-container',
+        'sections.faq-section'
       ]
     >;
     seo_section: Attribute.Component<'sections.seo'>;
@@ -669,7 +734,7 @@ export interface ApiPagePage extends Schema.CollectionType {
   collectionName: 'pages';
   info: {
     description: '';
-    displayName: 'page';
+    displayName: 'P\u00E1ginas';
     pluralName: 'pages';
     singularName: 'page';
   };
@@ -721,7 +786,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'organisms.tab-list',
         'sections.video-image',
         'sections.banner-cards',
-        'sections.table'
+        'sections.table',
+        'sections.faq-section'
       ]
     > &
       Attribute.Required;
@@ -1095,6 +1161,8 @@ declare module '@strapi/types' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::brand.brand': ApiBrandBrand;
+      'api::faq-category.faq-category': ApiFaqCategoryFaqCategory;
+      'api::faq.faq': ApiFaqFaq;
       'api::footer.footer': ApiFooterFooter;
       'api::general-config.general-config': ApiGeneralConfigGeneralConfig;
       'api::header.header': ApiHeaderHeader;

@@ -33,15 +33,6 @@
       "repeatable": true,
       "component": "sections.statistics-card"
     },
-    "description_json": {
-      "type": "json"
-    },
-    "descriptionCards_json": {
-      "type": "json"
-    },
-    "descriptionStatistics_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     },
