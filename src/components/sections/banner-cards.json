@@ -49,6 +49,12 @@
       "type": "component",
       "repeatable": false,
       "component": "molecules.button"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }

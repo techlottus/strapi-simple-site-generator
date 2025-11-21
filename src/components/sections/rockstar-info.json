@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_rockstar_infos",
+  "info": {
+    "displayName": "RockstarInfo",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "detail": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_rockstar_info_lists",
+  "info": {
+    "displayName": "RockstarInfoList",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "rockstars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.rockstar-info"
+    }
+  }
+}
