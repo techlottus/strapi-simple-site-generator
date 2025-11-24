@@ -64,7 +64,8 @@
         "sections.banner-cards",
         "sections.table",
         "sections.faq-section",
-        "sections.richtext-card"
+        "sections.richtext-card",
+        "sections.rockstar-info-list"
       ],
       "required": true
     },
