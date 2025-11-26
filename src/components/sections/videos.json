@@ -14,9 +14,6 @@
       "repeatable": true,
       "component": "sections.video-item"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

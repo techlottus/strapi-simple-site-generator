@@ -5,8 +5,6 @@
 import colorPicker from "@strapi/plugin-color-picker/strapi-admin";
 import graphql from "@strapi/plugin-graphql/strapi-admin";
 import i18N from "@strapi/plugin-i18n/strapi-admin";
-import seo from "@strapi/plugin-seo/strapi-admin";
-import importExportEntries from "strapi-plugin-import-export-entries/strapi-admin";
 import redirects from "strapi-plugin-redirects/strapi-admin";
 import { renderAdmin } from "@strapi/strapi/admin";
 
@@ -15,8 +13,6 @@ renderAdmin(document.getElementById("strapi"), {
     "color-picker": colorPicker,
     graphql: graphql,
     i18n: i18N,
-    seo: seo,
-    "import-export-entries": importExportEntries,
     redirects: redirects,
   },
 });

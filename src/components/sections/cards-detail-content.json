@@ -27,9 +27,6 @@
       ],
       "default": "left"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

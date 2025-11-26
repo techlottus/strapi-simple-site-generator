@@ -42,9 +42,6 @@
       "repeatable": true,
       "component": "molecules.button"
     },
-    "text_json": {
-      "type": "json"
-    },
     "text": {
       "type": "blocks"
     }

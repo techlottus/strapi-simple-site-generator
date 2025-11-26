@@ -14,9 +14,6 @@
       "repeatable": true,
       "component": "molecules.image"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

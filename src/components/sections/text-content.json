@@ -12,9 +12,6 @@
     "subtitle": {
       "type": "string"
     },
-    "text_json": {
-      "type": "json"
-    },
     "text": {
       "type": "blocks"
     }

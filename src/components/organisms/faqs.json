@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_organisms_faqs",
+  "info": {
+    "displayName": "faqs",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "categoria_faq": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faq-category.faq-category"
+    },
+    "max_entries": {
+      "type": "integer"
+    },
+    "sortdate": {
+      "type": "enumeration",
+      "enum": [
+        "erliest",
+        "latest"
+      ]
+    }
+  }
+}

@@ -17,9 +17,6 @@
       "repeatable": true,
       "component": "sections.accordion-item"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

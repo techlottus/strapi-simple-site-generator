@@ -18,9 +18,6 @@
     "classNames": {
       "type": "string"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

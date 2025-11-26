@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_faq_sections",
   "info": {
-    "displayName": "Container-FAQsection",
+    "displayName": "faq-section",
+    "icon": "layer",
     "description": ""
   },
   "options": {},
@@ -12,26 +13,10 @@
     "faqs": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.listconfig"
+      "component": "organisms.faqs"
     },
-    "faqCategory": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::faq-category.faq-category"
-    },
-    "component": {
-      "type": "enumeration",
-      "enum": [
-        "accordion",
-        "card",
-        "list"
-      ]
-    },
-    "ctaText": {
-      "type": "string"
-    },
-    "ctaUrl": {
-      "type": "string"
+    "description": {
+      "type": "blocks"
     }
   }
 }

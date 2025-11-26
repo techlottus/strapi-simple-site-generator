@@ -26,11 +26,6 @@
         "sections.web-error"
       ]
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
-    },
     "layout": {
       "type": "relation",
       "relation": "oneToOne",

@@ -14,12 +14,6 @@
       "repeatable": true,
       "component": "sections.color-card"
     },
-    "description_json": {
-      "type": "json"
-    },
-    "alternativeText_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     },

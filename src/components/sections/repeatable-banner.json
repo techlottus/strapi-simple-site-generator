@@ -15,9 +15,6 @@
       "repeatable": true,
       "component": "sections.banner"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

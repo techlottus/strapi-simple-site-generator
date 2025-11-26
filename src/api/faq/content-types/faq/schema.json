@@ -4,7 +4,7 @@
   "info": {
     "singularName": "faq",
     "pluralName": "faqs",
-    "displayName": "faq",
+    "displayName": "Preguntas frecuentes",
     "description": ""
   },
   "options": {
@@ -13,21 +13,19 @@
   "pluginOptions": {},
   "attributes": {
     "question": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "unique": true
     },
-    "faqCategory": {
+    "answer": {
+      "type": "blocks",
+      "required": true
+    },
+    "categoria_faq": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::faq-category.faq-category",
-      "inversedBy": "faqs"
-    },
-    "answer_json": {
-      "type": "json"
-    },
-    "answer": {
-      "type": "blocks"
+      "inversedBy": "preguntas_frecuentes"
     }
   }
 }

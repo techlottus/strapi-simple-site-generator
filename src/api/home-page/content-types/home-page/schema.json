@@ -24,31 +24,18 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "sections.banner",
-        "sections.blog-post-list",
-        "sections.carousel",
-        "sections.overlay-card-list",
-        "sections.entryconfig",
-        "sections.faq-section",
-        "sections.form-video",
         "sections.hero-slider",
-        "sections.hero",
-        "sections.listconfig",
-        "sections.offer",
         "sections.statistics-card-list",
-        "sections.statistics-card",
-        "sections.text-image",
-        "sections.image-card-list",
-        "sections.promo-link-list",
-        "sections.text-content",
-        "sections.events-card-container"
+        "sections.rich-text-image",
+        "sections.icon-text-list-image",
+        "sections.card-list",
+        "sections.rockstar-info-list",
+        "sections.banner-cards",
+        "sections.banner",
+        "sections.leaderboard",
+        "sections.faq-section",
+        "sections.richtext-card"
       ]
-    },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo",
-      "required": false
     },
     "layout": {
       "type": "relation",

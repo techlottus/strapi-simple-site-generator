@@ -38,9 +38,6 @@
       "repeatable": true,
       "component": "sections.testimonial-card"
     },
-    "description_json": {
-      "type": "json"
-    },
     "description": {
       "type": "blocks"
     }

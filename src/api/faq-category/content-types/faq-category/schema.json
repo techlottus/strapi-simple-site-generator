@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "faq_categories",
+  "collectionName": "faqs_categorys",
   "info": {
     "singularName": "faq-category",
-    "pluralName": "faq-categories",
-    "displayName": "FAQ Category"
+    "pluralName": "faqs-categorys",
+    "displayName": "Categoría-faqs",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,14 +14,13 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
-    "faqs": {
+    "preguntas_frecuentes": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::faq.faq",
-      "mappedBy": "faqCategory"
+      "mappedBy": "categoria_faq"
     }
   }
 }
