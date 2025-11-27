@@ -15,6 +15,22 @@
       "repeatable": false,
       "component": "molecules.card-button"
     },
+    "cardPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light"
+      ],
+      "default": "dark"
+    },
     "bg_image_desktop": {
       "allowedTypes": [
         "images",
