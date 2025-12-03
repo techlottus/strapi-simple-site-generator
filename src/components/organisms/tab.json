@@ -7,33 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "tab_label": {
       "type": "string"
     },
-    "content":{
-      "type": "enumeration",
-      "enum": [
-        "richtextImage",
-        "richtextVideo",
-        "bannerIconCard"
-      ],
-      "default": "richtextImage"
-    },
-    "richtextImage":{
-      "type": "component",
-      "repeatable": true,
-      "component": "sections.rich-text-image"
-    },
-    "richtextVideo":{
-      "type": "component",
-      "repeatable": true,
-      "component": "sections.rich-text-video"
-    },
-    "bannerIconCard":{
+    "cardlist": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.banner-cards"
+      "component": "sections.card-list"
     }
-
   }
 }
