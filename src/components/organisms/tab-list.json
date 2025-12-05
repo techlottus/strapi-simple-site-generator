@@ -9,9 +9,6 @@
     "title": {
       "type": "string"
     },
-    "accent_title": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
