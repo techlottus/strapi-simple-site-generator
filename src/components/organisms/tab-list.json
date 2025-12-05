@@ -12,6 +12,9 @@
     "subtitle": {
       "type": "string"
     },
+    "backgroundColor": {
+      "type": "string"
+    },
     "textAlign": {
       "type": "enumeration",
       "enum": [
