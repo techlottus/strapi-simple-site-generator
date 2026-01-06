@@ -9,10 +9,10 @@
     "title": {
       "type": "string"
     },
-    "accent_title": {
+    "subtitle": {
       "type": "string"
     },
-    "subtitle": {
+    "backgroundColor": {
       "type": "string"
     },
     "textAlign": {

@@ -34,7 +34,8 @@
         "sections.banner",
         "sections.leaderboard",
         "sections.faq-section",
-        "sections.richtext-card"
+        "sections.richtext-card",
+        "organisms.tab-list"
       ]
     },
     "layout": {
