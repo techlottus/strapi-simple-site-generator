@@ -1,24 +1,15 @@
-
 module.exports = ({ env }) => {
-  // console.group('database1 :');
-  // console.log('DATABASE_HOST_PRODUCTION: ', env('DATABASE_HOST_PRODUCTION'));
-  // console.log('DATABASE_PORT_PRODUCTION: ', env('DATABASE_PORT_PRODUCTION'));
-  // console.log('DATABASE_NAME: ', env('DATABASE_NAME'));
-  // console.log('DATABASE_USER_PRODUCTION: ', env('DATABASE_USER_PRODUCTION'));
-  // console.log('DATABASE_PASS_PRODUCTION: ', env('DATABASE_PASS_PRODUCTION'));
-  // console.log('DATABASE_SSL: ', env('DATABASE_SSL') === 'true');
-  // console.groupEnd();
-  return ({
+  return {
     connection: {
-      client: 'postgres',
+      client: "postgres",
       connection: {
-        host: env('DATABASE_HOST_PRODUCTION'),
-        port: env('DATABASE_PORT_PRODUCTION'),
-        database: env('DATABASE_NAME'),
-        user: env('DATABASE_USER_PRODUCTION'),
-        password: env('DATABASE_PASS_PRODUCTION'),
-        ssl: env('DATABASE_SSL') === 'true'
+        host: env("DATABASE_HOST", "127.0.0.1"),
+        port: env.int("DATABASE_PORT", 5432),
+        database: env("DATABASE_NAME", "strapi_cap"),
+        user: env("DATABASE_USER", "postgres"),
+        password: env("DATABASE_PASS", "postgres"),
+        ssl: env.bool("DATABASE_SSL", false),
       },
     },
-  })
+  };
 };
